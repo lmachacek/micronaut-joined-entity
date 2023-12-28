@@ -24,11 +24,8 @@ dependencies {
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation(libs.kotlin.stdlib)
 
-    compileOnly("io.micronaut:micronaut-http-client")
-
     runtimeOnly("ch.qos.logback:logback-classic")
-
-    testImplementation("io.micronaut:micronaut-http-client")
+    runtimeOnly("org.yaml:snakeyaml")
 
     testRuntimeOnly("com.h2database:h2")
 }
@@ -44,7 +41,7 @@ java {
 micronaut {
     version(libs.versions.micronaut.asProvider().get())
     runtime("netty")
-    testRuntime("kotest")
+    testRuntime("kotest5")
     processing {
         incremental(true)
         annotations("com.vendavo.micronaut.*")

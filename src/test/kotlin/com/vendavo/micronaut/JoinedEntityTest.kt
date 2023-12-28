@@ -3,7 +3,7 @@ package com.vendavo.micronaut
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.collections.shouldContain
 import io.kotest.matchers.optional.shouldBePresent
-import io.micronaut.test.extensions.kotest.annotation.MicronautTest
+import io.micronaut.test.extensions.kotest5.annotation.MicronautTest
 import java.util.*
 
 @MicronautTest(startApplication = false)

@@ -1,6 +1,6 @@
 [versions]
 kotlin = '1.8.22'
-micronaut = '3.6.6'
+micronaut = '3.10.1'
 micronaut-plugin = '3.5.3'
 shadow = '7.1.1'
 

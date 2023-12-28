@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: joined-entity
+
+jpa:
+  default:
+    entity-scan:
+      enabled: true
+      packages: com.vendavo.micronaut
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
